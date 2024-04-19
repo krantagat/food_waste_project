@@ -1,4 +1,4 @@
-﻿Category,Denmark (Foodwasteatprimaryproduction(kt)),Germany (Foodwasteatprimaryproduction(kt)),Italy (Foodwasteatprimaryproduction(kt)),Denmark (Foodwasteatmanufacturing(kt)),Germany (Foodwasteatmanufacturing(kt)),Italy (Foodwasteatmanufacturing(kt))
+﻿Category,Denmark_production,Germany_production,Italy_production,Denmark_manuf,Germany_manuf,Italy_manuf
 Meat,0,0,0,20.13,186.69,143.55
 Fish,136.5,58.06,66.46,27.89,80.37,37.75
 Dairy,14.9,89.16,33.45,43.63,218.16,139.81
