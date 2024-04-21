@@ -10,8 +10,6 @@ app = Flask(__name__)
 
 
 @app.route("/foodwastes/")
-# @auth.required
-
 def foodwastes():
     db_conn = pymysql.connect(host="localhost", user="root"
                               ,password=os.getenv('kranta_sql_password')
