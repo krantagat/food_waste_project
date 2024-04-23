@@ -20,7 +20,7 @@ GROUP BY
     per.country_id, per.country, per.year, per.seriesdescription
 LIMIT 5;
 
--- Query 4 | Ranking the county with highest total food waste in tonnes --
+-- Query 3 | Ranking the county with highest total food waste in tonnes --
 select * from tonne_cap;
 SELECT 
     year,
@@ -46,7 +46,7 @@ FROM
 WHERE
     common_name = (
         SELECT
-            common_name
+        common_name
         FROM
             national_fruit
         GROUP BY
@@ -55,49 +55,23 @@ WHERE
             COUNT(*) DESC
         LIMIT 1);
 
--- Query 5 --
-SELECT 
-    id, 
-    indicator, 
-    seriesdescription, 
-    country, 
-    year, 
-    value, 
-    time_detail, 
-    source, 
-    footnote, 
-    units 
-FROM 
-    moderate_percent 
-WHERE 
-    country = 'France'
+-- Query 5 Filtering only France from 4 United Nation tables--
+SELECT id, indicator, seriesdescription, country, year, value, time_detail, source,footnote, units 
+FROM moderate_percent 
+WHERE country = 'France'
 UNION ALL
 SELECT 
    *
-FROM 
-    moderate_population 
-WHERE 
-    country = 'France'
+FROM moderate_population 
+WHERE country = 'France'
 UNION ALL
-SELECT 
-    id, 
-    indicator, 
-    seriesdescription, 
-    country, 
-    year, 
-    value, 
-    time_detail, 
-    source, 
-    footnote, 
-    units 
-FROM 
-    severe_percent 
-WHERE 
-    country = 'France'
+SELECT id, indicator, seriesdescription, country, year, value, time_detail, source, footnote, units 
+FROM severe_percent 
+WHERE country = 'France'
 UNION ALL
-SELECT 
-  *
-FROM 
-    severe_population 
-WHERE 
-    country = 'France';
+SELECT *
+FROM severe_population 
+WHERE country = 'France';
+
+
+Select * from top_wasted;

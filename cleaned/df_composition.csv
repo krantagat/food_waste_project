@@ -1,7 +1,7 @@
-country,type,meat,fish,dairy,eggs,cereals,fruits,vegetables,potatoes,oilcrops,total
-Denmark,production,0.0,136.5,14.9,1.41,2.06,2.02,26.61,0.0,1.24,184.74
-Germany,production,0.0,58.06,89.16,14.42,45.06,99.25,332.97,0.0,15.18,654.1
-Italy,production,0.0,66.46,33.45,14.76,18.99,811.3,868.17,0.0,0.69,1813.81
-Denmark,manufacturing,20.13,27.89,43.63,1.35,16.42,7.81,24.05,9.45,0.0,148.73
-Germany,manufacturing,186.69,80.37,218.16,16.9,212.97,135.46,270.29,192.46,0.01,1313.11
-Italy,manufacturing,143.55,37.75,139.81,13.59,44.71,679.84,570.32,10.97,59.23,1699.78
+country,type,meat,fish,dairy,eggs,cereals,fruits,vegetables,potatoes,oilcrops
+Denmark,production,0,136.5,14.9,1.41,2.06,2.02,26.61,0,1.24
+Germany,production,0,58.06,89.16,14.42,45.06,99.25,332.97,0,15.18
+Italy,production,0,66.46,33.45,14.76,18.99,811.3,868.17,0,0.69
+Denmark,manufacturing,20.13,27.89,43.63,1.35,16.42,7.81,24.05,9.45,0
+Germany,manufacturing,186.69,80.37,218.16,16.9,212.97,135.46,270.29,192.46,0.01
+Italy,manufacturing,143.55,37.75,139.81,13.59,44.71,679.84,570.32,10.97,59.23
