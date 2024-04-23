@@ -12,9 +12,9 @@ select distinct country  from waste_per order by country desc;
 select * from country_desc;
 
 -- now lets adjust the original table so we will use this table
-alter table waste_per add column country_id int after id;
+alter table kilo_cap add column country_id int after id;
 -- lets set up the foreign key reference
-alter table waste_per ADD CONSTRAINT country_fk FOREIGN KEY (country_id) REFERENCES country_desc (country_id);
+alter table kil ADD CONSTRAINT country_fk FOREIGN KEY (country_id) REFERENCES country_desc (country_id);
 -- populate the column using the dimension table we created
 
 select * from waste_per;

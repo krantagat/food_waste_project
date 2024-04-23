@@ -3,7 +3,7 @@ SELECT
 country, seriesdescription AS target_name,
 ROUND(AVG(value), 0) AS average_value
 FROM 12_3_eu
-GROUP BY country_id, country, seriesdescription
+GROUP BY  country, seriesdescription
 ORDER BY AVG(value) DESC 
 LIMIT 10;
 
@@ -17,7 +17,7 @@ FROM
 INNER JOIN 
     moderate_population AS cap ON per.id = cap.id 
 GROUP BY 
-    per.country_id, per.country, per.year, per.seriesdescription
+     per.country, per.year, per.seriesdescription
 LIMIT 5;
 select * from tonne_cap;
 
