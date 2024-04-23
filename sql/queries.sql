@@ -19,23 +19,24 @@ INNER JOIN
 GROUP BY 
     per.country_id, per.country, per.year, per.seriesdescription
 LIMIT 5;
-
--- Query 3 | Ranking the county with highest total food waste in tonnes --
 select * from tonne_cap;
+
+-- Query 3 | First the county with highest total food waste in tonnes --
 SELECT 
     year,
-    country,
-    SUM(food_production) AS food_production,
-    SUM(food_manufacture) AS food_manufacture,
+    country,SUM(food_production) AS food_production,SUM(food_manufacture) AS food_manufacture,
     SUM(food_distribution) AS food_distribution,
     SUM(food_services) AS food_services,
     SUM(total_household_activities) AS food_household,
-      SUM(total) AS total
+	SUM(total) AS total
 FROM 
     tonne_cap 
 GROUP BY 
     year, country
-ORDER BY total_total DESC;
+ORDER BY total DESC
+LIMIT 1;
+
+
 
 
 -- Query 4 What is the most common national fruit in Europe and from which countries --
@@ -46,7 +47,7 @@ FROM
 WHERE
     common_name = (
         SELECT
-        common_name
+        common_name as national_fruit
         FROM
             national_fruit
         GROUP BY
